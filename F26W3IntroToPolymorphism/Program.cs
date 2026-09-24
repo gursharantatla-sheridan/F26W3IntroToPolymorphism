@@ -4,6 +4,24 @@
     {
         static void Main(string[] args)
         {
+            // dynamic polymorphism
+
+            BaseClass objBase = new BaseClass();
+            objBase.Show();
+
+            //DerivedClass objDerived = new DerivedClass();
+            //objDerived.Show();
+
+            objBase = new DerivedClass();
+            objBase.Show();
+
+            //DerivedClass objDerived = new BaseClass();
+
+
+
+
+
+            // static polymorphism
             Add(2, 3);
 
             int[] a = { 1, 2, 3 };
